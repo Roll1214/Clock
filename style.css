@@ -27,15 +27,15 @@ body {
   right: 50%;
   width: 50%;
   height: 10px;
-  transform-origin: 100%;
+  transform-origin: calc(100% - 5px);
   transform: rotate(90deg);
   background: #cecece;
   border-radius: 5px;
 }
 
 .hand.hrs {
-  z-index: 1;
-  width: 30%;
+  z-index: 3;
+  width: 20%;
 }
 
 .hand.min {
@@ -44,5 +44,7 @@ body {
 }
 
 .hand.sec {
-  z-index: 3;
+  z-index: 1;
+  width: 30%;
+  background: hsl(0, 100%, 60%);
 }
